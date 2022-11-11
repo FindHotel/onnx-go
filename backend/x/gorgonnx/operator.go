@@ -10,6 +10,8 @@ func register(optype string, op func() operator) {
 	operators[optype] = op
 }
 
+var Register = register
+
 var operators = map[string]func() operator{}
 
 //var operators = map[string]operator{}
